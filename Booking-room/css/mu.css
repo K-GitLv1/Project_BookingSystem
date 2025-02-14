@@ -1,0 +1,218 @@
+body {
+    padding: 50px;
+    
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.container {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 810px;
+    margin-top: 150px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+h2 {
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background: #333;
+    color: white;
+}
+.btn {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin: 3px;
+}
+.btn-delete {
+    background: red;
+}
+.btn-edit {
+    background: orange;
+}
+.btn-add {
+    background: green;
+}
+.modal {
+font-family: "Noto Sans Thai", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+display: none; /* ซ่อน Modal ไว้ก่อน */
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+position: relative;
+background-color: #fff;
+padding: 25px;
+border-radius: 10px;
+width: 35%;
+max-width: 500px;
+box-shadow: 0px 6px 12px rgba(15, 131, 0, 0.3);
+text-align: center;
+font-family: inherit;
+}
+
+.modal-content h3 {
+margin-bottom: 15px;
+color: #333;
+}
+
+.modal-content input, 
+.modal-content select {
+font-family: "Noto Sans Thai", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+width: 100%;
+padding: 8px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.modal-content button {
+width: 100%;
+padding: 10px;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.modal-content button:hover {
+background-color: #218838;
+}
+
+/* ปุ่มปิด (X) */
+.close {
+
+position: absolute;
+top: 10px;
+right: 15px;
+font-size: 24px;
+cursor: pointer;
+}
+
+.close:hover {
+color: red;
+}
+
+.btn-primary { background-color: #007bff; color: white; }
+.btn-primary:hover { background-color: #0056b3; }
+.btn-success { background-color: #28a745; color: white; }
+.btn-success:hover { background-color: #218838; }
+.btn-success {
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px; /* เพิ่มระยะห่างจากเนื้อหา */
+}
+/* ปุ่ม */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* แสดงตัวอย่างรูปภาพ */
+#profile-preview {
+    display: none;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+/* ตกแต่งฟอร์ม */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* ทำให้ input มีเอฟเฟกต์เมื่อโฟกัส */
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+#profile-preview {
+    max-width: 150px; /* กำหนดความกว้างสูงสุด */
+    max-height: 150px; /* กำหนดความสูงสูงสุด */
+    display: none; /* ซ่อนรูปจนกว่าจะเลือกไฟล์ */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    object-fit: cover; /* ป้องกันภาพผิดสัดส่วน */
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+table img {
+    max-width: 50px; /* กำหนดความกว้างสูงสุด */
+    max-height: 50px; /* กำหนดความสูงสูงสุด */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    object-fit: cover; /* ป้องกันภาพผิดสัดส่วน */
+    border: 2px solid #ddd; /* เส้นขอบบางๆ */
+    padding: 2px;
+}

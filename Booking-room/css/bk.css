@@ -1,0 +1,137 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #4e54c8;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 200px;
+}
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.filter-options select,
+.filter-options button {
+    margin-left: 10px;
+}
+
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* เพิ่มเพื่อให้ตารางมีความกว้างคงที่ */
+}
+.room-table th:first-child, .room-table td:first-child {
+    width: 80%; /* ปรับความกว้างของคอลัมน์ซ้ายเป็น 70% */
+}
+
+.room-table th:last-child, .room-table td:last-child {
+    width: 15%; /* ปรับความกว้างของคอลัมน์ขวา */
+    text-align: center; /* จัดข้อความในหัวคอลัมน์ให้ตรงกลาง */
+    vertical-align: middle; /* จัดเนื้อหาให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+.room-table td:last-child {
+    text-align: right; /* ปรับให้ปุ่มอยู่ชิดขวา */
+}
+
+
+.room-table th, .room-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; /* ปรับให้อัลไลน์เนื้อหาด้านบน */
+    word-wrap: break-word; /* ตัดข้อความเมื่อเกินพื้นที่คอลัมน์ */
+}
+
+.room-table th {
+    background-color: #6a71d7; /* เพิ่มสีพื้นหลังเพื่อให้ดูโดดเด่น */
+    color: #fff;
+    text-align: center; /* จัดให้ข้อความในหัวคอลัมน์อยู่ตรงกลาง */
+}
+.room-table td {
+    text-align: left; /* ให้ข้อความในเซลล์คอลัมน์ "รายละเอียดห้อง" เรียงจากซ้าย */
+}
+
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* จำกัดความกว้างคอลัมน์ */
+    max-height: 5.6em; /* จำกัดความสูงให้ไม่เกิน 6 บรรทัด (1.4em ต่อบรรทัด) */
+    overflow: hidden; /* ซ่อนข้อความที่เกิน */
+    text-overflow: ellipsis; /* เพิ่ม ... สำหรับข้อความที่ถูกตัด */
+    white-space: normal; /* อนุญาตให้ข้อความตัดบรรทัด */
+    line-height: 1.4em; /* ระยะห่างระหว่างบรรทัด */
+}
+
+
+.room-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-book {
+    background-color: #007bff;
+}
+
+.btn-detail {
+    background-color: #ffa500;
+}
+
+.btn:hover {
+    opacity: 0.9; /* เพิ่มเอฟเฟกต์ hover */
+}
+
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+#roomDetails {
+    font-size: 16px;
+    line-height: 1.5;
+}

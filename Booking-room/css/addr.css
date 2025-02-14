@@ -1,0 +1,82 @@
+/* addr.css */
+/* เพิ่มระยะห่างด้านล่างให้ container */
+.container {
+    margin-bottom: 50px; /* เพิ่มระยะห่าง */
+}
+
+/* จัดรูปแบบฟอร์ม */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* ส่วนหัวฟอร์ม */
+form h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* กล่องข้อความและป้ายชื่อ */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="color"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* ปรับ textarea */
+form textarea {
+    resize: none;
+}
+
+/* ปุ่มบันทึก */
+form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* ปุ่มเลือกไฟล์ */
+form input[type="file"]::file-selector-button {
+    background-color: #26b3eb;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form input[type="file"]::file-selector-button:hover {
+    background-color: #008cff;
+}

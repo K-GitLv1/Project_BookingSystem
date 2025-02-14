@@ -1,0 +1,80 @@
+body {
+    margin-top: 80px;
+}
+
+.edit-profile {
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 450px;
+    height: 800px; /* ปรับให้พอดีกับฟอร์ม */
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.edit-profile-header h1 {
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+.edit-profile::before, .edit-profile::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+
+.edit-profile::before {
+    left: 30%;
+    bottom: -80%;
+    background-color: rgba(255, 255, 255, 0.15);
+    animation: waves 6s infinite linear;
+}
+
+.edit-profile::after {
+    left: 20%;
+    bottom: -90%;
+    background-color: rgba(247, 12, 255, 0.2);
+    animation: waves 7s infinite;
+}
+
+.input-group > input {
+    font-family: "Noto Sans Thai", sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgb(236, 236, 236);
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+}
+
+.edit-profile button {
+    font-family: "Noto Sans Thai", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    width: 100%;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 110px;
+    background-color: #8d47ff;
+    transition: background-color 300ms;
+}
+
+.edit-profile button:hover {
+    background-color: #8c00ff;
+}

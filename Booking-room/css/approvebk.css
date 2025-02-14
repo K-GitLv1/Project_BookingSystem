@@ -1,0 +1,174 @@
+/* ปรับพื้นหลังเป็นสีขาว */
+body {
+    background-color: #fff;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #333;
+    margin-top: 100px;
+}
+.room-table th, .room-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-right: 2px solid #ccc; /* เส้นแบ่งระหว่างคอลัมน์ */
+}
+
+/* ลบเส้นด้านขวาของคอลัมน์สุดท้าย */
+.room-table th:last-child, .room-table td:last-child {
+    border-right: none;
+}
+
+
+/* ฟอร์มการค้นหา */
+.filter-options form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.filter-options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-options select,
+.filter-options input[type="date"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-options button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-options button:hover {
+    background-color: #0056b3;
+}
+
+/* ตารางการจอง */
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    table-layout: auto; /* ให้ขนาดของคอลัมน์อัตโนมัติตามข้อมูล */
+}
+
+.room-table th, .room-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* เส้นขอบแนวตั้ง */
+}
+
+.room-table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.room-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.room-table td button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.room-table td button:hover {
+    background-color: #218838;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-options form {
+        flex-direction: column;
+    }
+
+    .filter-options label {
+        width: 100%;
+    }
+
+    .room-table th, .room-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
