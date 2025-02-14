@@ -1,0 +1,135 @@
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;  /* จัดกลางในแนวนอน */
+    align-items: center;      /* จัดกลางในแนวตั้ง */
+    height: 100vh;            /* ทำให้เต็มความสูงของหน้าจอ */
+
+}
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 180px;
+            
+        }
+        .container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="name"],
+         .form-group input[type="password"],
+         .form-group input[type="tel"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="file"] {
+            margin-top: 10px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .form-group button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+        .profile-container {
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    align-items: center;     /* จัดกลางในแนวตั้ง */
+    margin-bottom: 20px;
+}
+
+.profile-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block; /* แสดงรูปโปรไฟล์ */
+}
+
+.profile-container .empty-profile {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile-container .empty-profile i {
+    font-size: 30px;
+    color: #ccc;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* เอฟเฟกต์เมื่อ input ถูกโฟกัส */
+input {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* เปลี่ยนสีขอบและเงาเมื่อคลิก */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+
+
+/* เอฟเฟกต์เปลี่ยนพื้นหลังตอนโฮเวอร์ */
+input:hover {
+    background-color: #f8f9fa;
+}

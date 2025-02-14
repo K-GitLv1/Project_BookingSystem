@@ -1,0 +1,162 @@
+/* Styles for body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: linear-gradient(135deg, #e0d8ff, #e0d8ff);
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    background-color: #6f75e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 2em; /* ขนาดใหญ่สำหรับ Booking */
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 1em; /* ขนาดเล็กกว่า สำหรับ ระบบจองห้องประชุม */
+    margin: 0;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    position: fixed;
+    top: 35px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #4e54c8;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1100; /* ให้อยู่เหนือ header */
+    color: white;
+
+}
+
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #3b41b9;
+}
+
+/* Close button for the sidebar */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    cursor: pointer;
+    z-index: 1200; /* เพิ่มเลเยอร์ให้อยู่ด้านหน้าสุด */
+}
+/* ทำให้เนื้อหาด้านล่างไม่ซ้อนกับ .header */
+.login-container {
+    margin-top: 100px; /* ระยะห่างจาก .header */
+    text-align: center;
+}
+
+.user-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    margin-bottom: 5px;
+}
+.user-profile p {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* สไตล์สำหรับ dropdown */
+.dropdown-content {
+    display: block; /* แสดงเมนู dropdown ให้เป็นค่าเริ่มต้น */
+    position: relative;
+    background-color: #3a43ec;
+    max-height: 0; /* เริ่มต้นที่ 0 เพื่อซ่อนเมนู */
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
+    transition: max-height 0.3s ease-out; /* เพิ่ม transition เพื่อทำให้เมนูเลื่อนขึ้น/ลงอย่างราบรื่น */
+}
+
+.dropdown.open .dropdown-content {
+    max-height: 200px; /* เมื่อเปิดเมนู ให้ขยายความสูงเป็นขนาดที่ต้องการ */
+}
+
+.dropdown a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+
+/* เมื่อ hover ที่ลิงก์ใน dropdown */
+.dropdown a:hover {
+    background-color: #3b41b9;
+}
+/* ปรับการแสดงผลของลูกศร */
+.arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* เมื่อ dropdown ถูกเปิด ลูกศรจะหมุนขึ้น */
+.dropdown.open .arrow {
+    transform: rotate(180deg); /* หมุนลูกศร 180 องศา */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

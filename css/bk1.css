@@ -1,0 +1,113 @@
+/* ========================= */
+/* ✨ สไตล์สำหรับ Modal ✨ */
+/* ========================= */
+.modal {
+    display: none; /* ซ่อน Modal ไว้ก่อน */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ff0000;
+    padding: 20px;
+    border-radius: 12px;
+    width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: #000000;
+    /* color: #000000; */
+}
+
+/* ========================= */
+/* ❌ ปุ่มปิด Modal ❌ */
+/* ========================= */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #777;
+}
+
+.close:hover {
+    color: #d9534f;
+}
+
+/* ========================= */
+/* 🎨 สไตล์ของ Input Form 🎨 */
+/* ========================= */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #a15cb8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(181, 92, 184, 0.5);
+}
+
+/* ========================= */
+/* 🟢 ปุ่มบันทึก 🟢 */
+/* ========================= */
+.btn-save {
+    width: 100%;
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-save:hover {
+    background-color: #4cae4c;
+}
+.btn-clear {
+    background-color: #dc3545;
+    float: right;
+    margin-bottom: 10px; /* เพิ่มระยะห่างจากปุ่มอื่น */
+}
+/* ปรับการจัดตำแหน่งของ checkbox */
+input[type="checkbox"] {
+    margin-right: 5px; /* เพิ่มช่องว่างระหว่าง checkbox และข้อความ */
+    vertical-align: middle; /* จัดให้อยู่ในระดับเดียวกับข้อความ */
+}
+
+/* ปรับจัดระเบียบและช่องว่างระหว่าง label และ checkbox */
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px; /* ขนาดตัวอักษร */
+}
+/* ปรับการจัดตำแหน่งของ checkbox และข้อความให้ตรงกัน */
+div .cb {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px; /* เพิ่มช่องว่างระหว่าง checkbox และข้อความ */
+}
+
+/* ปรับช่องว่างระหว่าง checkbox กับข้อความ */
+input[type="checkbox"] {
+    margin-right: 5px; /* ช่องว่างระหว่าง checkbox และข้อความ */
+}
